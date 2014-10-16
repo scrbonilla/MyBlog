@@ -23,6 +23,7 @@ table, th, td {
     background: #bdccd6;
     border: 1px solid black;
     padding: 5px;
+    border-collapse: collapse;
 }
 
 
