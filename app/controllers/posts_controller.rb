@@ -4,11 +4,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    if params[:search]
-      @posts = Post.search(params[:search])
-    else
       @posts = Post.most_recent
-    end
+
+  end
+
+  def
+    @results = Post.search(params[:q])
   end
 
   # GET /posts/1

@@ -12,7 +12,7 @@
   </thead>
 
   <tbody>
-    <% @posts.each do |post| %>
+    <% @results.each do |post| %>
       <tr>
         <td><%= post.subject %></td>
         <td><%= post.body %></td>
@@ -27,6 +27,4 @@
 
 <br>
   <%= link_to 'New Post', new_post_path %>
-  <%= form_tag
 </body>
-
