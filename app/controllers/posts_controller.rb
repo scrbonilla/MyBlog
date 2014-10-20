@@ -8,10 +8,6 @@ class PostsController < ApplicationController
 
   end
 
-  def
-    @results = Post.search(params[:q])
-  end
-
   # GET /posts/1
   # GET /posts/1.json
   def show
