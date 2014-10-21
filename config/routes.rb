@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  root 'posts#index'
+  # get "homepage/home"
 
   # do
   #   get 'search', on: :collection
