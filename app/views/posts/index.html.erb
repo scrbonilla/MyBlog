@@ -5,10 +5,10 @@
   <title>Simple Search Form</title>
 </head>
 <body>
-  <%= form_tag(posts_path, method: "get", class: "navbar-form", id: "search-form") do %>
+  <%= form_tag(posts_path, :method => "get", class: "navbar-form", id: "search-form") do %>
     <div class="input-append">
-      <%= text_field_tag :search, params[:search], class: "span2", placeholder: "Search Articles" %>
-      <button class="btn" type="submit"><i class="icon-search"></i></button>
+      <%= text_field_tag :search, params[:set_post], class: "span2", placeholder: "Search Posts" %>
+      <button class="btn" type="submit">search<i class="icon-search"></i></button>
     </div>
   <% end %>
   <%= yield %>
